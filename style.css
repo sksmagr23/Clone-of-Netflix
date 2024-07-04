@@ -31,10 +31,11 @@ nav {
   max-width: 90vw;
   align-items: center;
   height: 62px;
+  z-index: 10;
 }
 nav img {
   color: red;
-  width: 118px;
+  width: 120px;
   position: relative;
   z-index: 10;
 }
@@ -112,6 +113,7 @@ nav button {
 select {
   color: rgb(254, 254, 254);
   border: 0.5px solid white;
+  z-index: 10;
 }
 .main input {
   padding: 13px 100px 13px 12px;
@@ -257,3 +259,188 @@ footer .questions {
 .last{
   padding: 25px 0px 13px 0px
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .main {
+    background-size: cover;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 992px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+  .text > :first-child {
+    font-size: 28px;
+  }
+  .text > :nth-child(2) {
+    font-size: 16px;
+  }
+  .text > :nth-child(3) {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+  nav img {
+    width: 100px;
+  }
+  nav button, nav select {
+    margin-top: 10px;
+  }
+  .first {
+    max-width: 90vw;
+  }
+  .secimg img {
+    width: 100%;
+  }
+  .secimg video {
+    top: 10px;
+    right: 10px;
+    width: 80%;
+  }
+  .paaji img {
+    width: 100%;
+  }
+  .paaji video {
+    top: 10px;
+    right: 10px;
+    width: 80%;
+  }
+  .que {
+    font-size: 14px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+  .text > :first-child {
+    font-size: 22px;
+  }
+  .text > :nth-child(2) {
+    font-size: 14px;
+  }
+  .text > :nth-child(3) {
+    font-size: 12px;
+  }
+  .btn-red {
+    padding: 6px 16px;
+    font-size: 16px;
+  }
+  .btn-red-sm {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  .first {
+    flex-direction: column;
+  }
+  .first > div :first-child {
+    font-size: 28px;
+  }
+  .first > div :nth-child(2) {
+    font-size: 14px;
+  }
+  .secimg {
+    width: 100%;
+    text-align: center;
+  }
+  .secimg img,
+  .paaji img {
+    width: 80%;
+  }
+  .secimg video,
+  .paaji video {
+    width: 100%;
+    top: 5px;
+    right: 0;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer-item {
+    text-align: center;
+  }
+  .return,
+  .last {
+    text-align: center;
+  }
+  .faq h1 {
+    font-size: 28px;
+  }
+  .extra {
+    font-size: 13px;
+  }
+}
+
+/* Adjustments for even smaller screens, max-width 400px */
+@media (max-width: 400px) {
+  nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+  .text > :first-child {
+    font-size: 18px;
+  }
+  .text > :nth-child(2) {
+    font-size: 12px;
+  }
+  .text > :nth-child(3) {
+    font-size: 10px;
+  }
+  .btn-red {
+    padding: 5px 12px;
+    font-size: 14px;
+  }
+  .btn-red-sm {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+  nav img {
+    width: 80px;
+  }
+  .first > div :first-child {
+    font-size: 24px;
+  }
+  .first > div :nth-child(2) {
+    font-size: 12px;
+  }
+  .secimg img,
+  .paaji img {
+    width: 100%;
+  }
+  .secimg video,
+  .paaji video {
+    width: 90%;
+    top: 0;
+    right: 0;
+  }
+  .faq h1 {
+    font-size: 24px;
+  }
+  .extra {
+    font-size: 11px;
+  }
+}  

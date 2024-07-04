@@ -19,7 +19,6 @@ This repository contains a simple clone of Netflix created using HTML and CSS. I
 - SVG files
 
 ## Future Improvements
-- To add some Responsiveness in the design
 - To add the functionality of JavaScript
 
 
